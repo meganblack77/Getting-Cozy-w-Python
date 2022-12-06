@@ -87,6 +87,10 @@ elif random_number == 7: answer = "My sources say no"
 elif random_number == 8: answer = "Outlook not so good."
 elif random_number == 9: answer = "Very doubtful."
 else: answer = "Error"
-print(name, 'asks: ', question)
+
+if name == "": print('Question:', question)
+else: print(name, 'asks: ', question)
 
 print("Magic 8-Ball's answer: ", answer)
+
+
