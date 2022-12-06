@@ -1,5 +1,6 @@
 #ASCII Art Block Letters
 
+
 print('M     M  BBBB ')
 print('M M M M  B   B')
 print('M M M M  B   B')
@@ -10,6 +11,7 @@ print('M     M  BBBB')
 
 
 #This program prints a receipt for a customer purchasing items w/ descriptions
+
 
 lovely_loveseat_description = """Lovely Loveseat. Tufted polyester blend on wood. 32 inches high x 40 inches wide x 30 inches deep. Red or white. """
 lovely_loveseat_price = 254.00
@@ -33,4 +35,32 @@ customer_one_tax = customer_one_total * sales_tax
 customer_one_total += customer_one_tax
 print('Customer One Items:', customer_one_itemization )
 print("Customer One Total:", customer_one_total)
+
+
+#This program converts your earth weight to what you would weight on different plannets using elif statements
+
+
+print("I have information for the following planets:\n")
+
+print("   1. Venus   2. Mars    3. Jupiter")
+print("   4. Saturn  5. Uranus  6. Neptune\n")
+ 
+weight = 150
+planet = 2
+
+# Write an if statement below:
+if planet == 1:
+  weight = weight * 0.91
+elif planet == 2:
+  weight = weight * 0.38
+elif planet == 3:
+  weight = weight * 2.34
+elif planet == 4:
+  weight = weight * 1.06
+elif planet == 5:
+  weight = weight * 0.92
+elif planet == 6:
+  weight = weight * 1.19
+
+print("Your weight:", weight)
 
