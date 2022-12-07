@@ -92,5 +92,30 @@ if question == "": print("Error")
 else: 
   print(name, 'asks: ', question) 
   print("Magic 8-Ball's answer: ", answer)
+  
+  
+#Shipping price calculator based on weight
+
+
+weight = 41.5
+#ground shipping
+if weight <= 2: ground_price = weight * 1.50 + 20.00
+elif weight <= 6: ground_price = weight * 3.00 + 20.00
+elif weight <= 10: ground_price = weight * 4.00 + 20.00
+else: ground_price = weight * 4.75 + 20.00
+print('Ground Shipping: $', ground_price)
+
+premium_shipping_cost = 125.00
+print('Ground Shipping Premium: $', premium_shipping_cost)
+
+#drone shipping
+if weight <= 2: drone_price = weight * 4.50
+elif weight <= 6: drone_price = weight * 9.00
+elif weight <= 10: drone_price = weight * 12.00
+else: drone_price = weight * 14.25
+print('Drone Shipping: $', drone_price)
+
+
+
 
 
